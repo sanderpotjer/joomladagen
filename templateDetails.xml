@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="1.7" type="template" client="site">
+	<name>joomladagen</name>
+	<creationDate>November 2011</creationDate>
+	<author>Sander Potjer</author>
+	<authorEmail>mail@sanderpoter.nl</authorEmail>
+	<authorUrl>http://www.sanderpotjer.nl</authorUrl>
+	<copyright>Sander Potjer Webdevelopment</copyright>
+	<license>GNU General Public License version 3 or later</license>
+	<version>1.7.0</version>
+	<description>Responsive Template voor de Joomla!Dagen door Sander Potjer - www.sanderpotjer.nl</description>
+	
+	<!-- Files and folders to install -->
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>javascript</folder>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+	</files>
+	
+	<!-- Template Positions -->
+	<positions>
+		<position>debug</position>
+		<position>slogan</position>
+		<position>sponsoren-diamant</position>
+		<position>sponsoren-goud</position>
+		<position>sponsoren-zilver</position>
+		<position>nieuwsbrief</position>
+		<position>right</position>
+	</positions>
+	
+</extension>

@@ -1,0 +1,588 @@
+/**
+ * @package		JoomlaDagen template
+ * @copyright 	Copyright (c) 2011 Sander Potjer - www.sanderpotjer.nl
+ * @license 	GNU General Public License version 3 or later
+ */
+
+
+/* #Site Specifc Styles
+================================================== */
+body {
+	background-image: url("../images/jdnl-xl.jpg");
+	background-repeat: repeat-x;
+	background-position: 50% 40px;
+	background-color: transparent;
+	padding-top: 40px;
+}
+
+body.component {
+	background: #fff;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td {
+	font-family: 'Nobile', sans-serif;
+	font-weight: 400;
+}
+
+.logo {
+	height: 100px;
+	background-image: url("../images/logo12.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-color: transparent;
+}
+
+.tagline {
+	height: 190px;
+}
+
+.header {
+	height: 250px;
+}
+
+.tagline p {
+	font-size: 17px;
+	line-height: 30px;
+}
+
+ul.tabs {
+	margin-bottom: 0;
+}
+
+.pill-content {
+	background: #fff;
+	padding: 10px;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+}
+
+blockquote {
+    border-left: 5px solid #DDDDDD;
+}
+
+p {
+	line-height: 22px;
+	font-size: 13px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Nobile', sans-serif;
+	font-weight: normal;
+	text-shadow: 0 1px 0 #fff;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.row h2 {
+	margin-bottom: 0;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.sidebar h3 {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+a {
+	color: #0D6DAB;
+}
+
+.label {
+    padding: 3px 4px 2px;
+    font-weight: normal;
+}
+
+.footer {
+  background-color: #eee;
+  padding: 15px 0 5px;
+  text-shadow: 0 1px 0 #fff;
+  border-top: 1px solid #DDDDDD;
+  -webkit-box-shadow: inset 0 5px 15px rgba(0,0,0,.025);
+  -moz-box-shadow: inset 0 5px 15px rgba(0,0,0,.025);
+}
+
+.footer p {
+  color: #555;
+  font-size: 11px;
+  text-align: center;
+}
+
+.topbar div > ul a, .nav a {
+	padding: 10px 9px 11px;
+}
+
+.sidebar .tl {
+	background: url("../images/tl.png") no-repeat 0 0 transparent;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.sidebar .tr {
+	background: url("../images/tr.png") no-repeat 100% 0 transparent;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.sponsortitle {
+	margin: 0 20px;
+	height: 20px;
+	line-height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+
+.sidebar .sponsortitle {
+	background: #EFEFEF;
+}
+
+.sponsoren {
+	margin: -10px -5px 10px -5px;
+}
+
+.zilver .sponsorvlak,
+.sidebar .sponsorvlak {
+	background: #fff;
+	border: 1px solid #DDDDDD;
+}
+
+.sponsorvlak img {
+	height: auto;
+	width: 100%;
+}
+
+.sidebar .row {
+	background: #EFEFEF;
+}
+
+.white {
+	background: #ffffff;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	padding-top: 10px;
+	margin: 0 -10px 0 -10px;
+}
+
+.content .row {
+	background: #EFEFEF;
+}
+
+.content .row {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.space {
+	padding: 10px;
+}
+
+select {
+	width: 100%;
+}
+
+.topbar .mobileMenu {
+	display: none;
+}
+
+.topbar .fill {
+	height: 40px;
+}
+
+.mobileheader {
+	display: none;
+}
+
+.btn {
+	margin-bottom: 10px;
+}
+
+.btn.full-width {
+	width: 100%;
+	padding: 5px 0 6px;
+	text-align: center;
+}
+
+.itemtitle {
+	padding: 0 10px;
+}
+
+blockquote p {
+    line-height: 22px;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.content img {
+    border: 1px solid #DDDDDD;
+    background: #fff;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+    padding: 4px;
+	height: auto;
+	max-width: 220px;
+	width: 220px;
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.content .sponsorvlak img {
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.content .diamant {
+	display: none;
+}
+
+strong {
+	font-weight: bold;
+}
+
+iframe, object, embed{
+	max-width: 100%;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.goud {
+	display: none;
+}
+
+.component .goud {
+	display: block;
+}
+
+.twtr-hd,
+.twtr-ft {
+	display: none;
+}
+
+#twitter .twtr-widget .twtr-tweet-wrap {
+	padding: 6px 0;
+}
+
+#twitter .twtr-widget p {
+	font-size: 12px;
+}
+
+.btn.right {
+	float: right;
+}
+
+.published {
+	font-size: 11px;
+	color: #777;
+	width: 50%;
+	float: left;
+}
+
+.published.intro {
+	width: 100%;
+}
+
+.social {
+	width: 50%;
+	float: right;
+}
+
+.social .soc {
+	float: right;
+}
+
+.feed ul {
+	margin: 0 0 0 15px;
+	font-size: 12px;
+}
+
+#social {
+	float: right;
+	line-height: 35px;
+}
+
+#social li {
+	line-height: 35px;
+	margin: 0 2px;
+}
+
+#social li a {
+	width: 24px;
+	height: 35px;
+	text-indent: -9999px;
+	line-height: 35px;
+	padding: 0;
+	float: left;
+	background-image: url("../images/socialicons.png");
+	background-repeat: no-repeat;
+}
+
+#social .twitter a {
+	background-position: 0 50%;
+}
+
+#social .twitter a:hover {
+	background-position: -24px 50%;
+}
+
+#social .facebook a {
+	background-position: -48px 50%;	
+}
+
+#social .facebook a:hover {
+	background-position: -72px 50%;	
+}
+
+#social .flickr a {
+	background-position: -96px 50%;	
+}
+
+#social .flickr a:hover {
+	background-position: -120px 50%;
+}
+
+.actions {
+	padding-left: 20px;
+	margin: 0 -10px 10px -10px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.actions iframe {
+	margin-bottom: 0;
+}
+
+.actions .website {
+	text-align: right;
+	float: right;
+}
+
+blockquote small {
+	color: #404040;
+}
+
+div.prijs {
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+div.prijs span.label {
+	font-size: 16px;
+}
+
+/* HYPERLINK CUES */
+/* toevoeging van HKuijpers */
+/* http://www.askthecssguy.com/2006/12/showing_hyperlink_cues_with_cs_1.html */
+/* all A tags whose HREF attribute ends in .pdf */
+a[href$='.pdf'] {
+	padding-right: 18px;
+	background: transparent url(../images/icons/icon_pdf.gif) no-repeat center right;
+}
+
+a[rel='pdf'] {
+	padding-right: 18px;
+	background: transparent url(../images/icons/icon_pdf.gif) no-repeat center right;
+}
+
+a[rel*='pdf'] {
+	padding-right: 18px;
+	background: transparent url(../images/icons/icon_pdf.gif) no-repeat center right;
+}
+
+a[rel~='pdf'] {
+	padding-right: 18px;
+	background: transparent url(../images/icons/icon_pdf.gif) no-repeat center right;
+}
+
+a[href ^="mailto:"] {
+	padding-right: 18px;
+	background: transparent url(../images/icons/icon_mailto.gif) no-repeat center right;
+}
+
+a[class ="popup"] {
+	padding-right: 18px;
+	background: transparent url(../images/icons/icon_popup.gif) no-repeat center right;
+}
+
+a[href$='.doc'] {
+	padding-right: 18px;
+	background: transparent url(../images/icons/icon_doc.gif) no-repeat center right;
+}
+a[href$='.xls'] {
+	padding-right: 18px;
+	background: transparent url(../images/icons/icon_xls.gif) no-repeat center right;
+}
+a[href$='.ppt'] {
+	padding-right: 18px;
+	background: transparent url(../images/icons/icon_ppt.gif) no-repeat center right;
+}
+a[rel ~='external'] {
+	padding-right: 18px;
+	background: transparent url(../images/icons/icon_external.gif) no-repeat center right;
+}
+
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		body {
+			background-image: url("../images/jdnl-l.jpg");
+		}
+		
+		.logo {
+			height: 80px;
+			background-image: url("../images/logo12-l.png");
+		}
+		
+		.header {
+			height: 200px;
+		}
+		
+		.tagline {
+		    height: 155px;
+		}
+		
+		.tagline p {
+			font-size: 13px;
+			line-height: 24px;
+		}
+		
+		h1 {
+		    font-size: 20px;
+		    line-height: 30px;
+		}
+		
+		h2 {
+		    font-size: 16px;
+		    line-height: 26px;
+		}
+		
+		h3 {
+		    font-size: 14px;
+		    line-height: 25px;
+		}
+		
+		p {
+			line-height: 22px;
+			font-size: 12px;
+		}
+		
+		.content img {
+			max-width: 180px;
+		}
+		
+		iframe, object, embed{
+			width: 100%;
+			height: auto;
+		}
+		
+		.published,
+		.social {
+			width: 100%;
+		}
+		
+		div.prijs,
+		div.prijs span.label {
+			font-size: 13px;
+		}
+		
+		ul#menu {
+			font-size: 12px;
+		}
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		body {
+			background-image: none;
+		}
+		
+		.white {
+			margin: 0;
+		}
+		
+		.topbar .mobileselect {
+			margin-top: 5px;
+			background: #fff;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+		}
+		
+		.mobileheader img {
+		    height: auto;
+		    width: 100%;
+		}
+		
+		.mobileheader,
+		.content .diamant,
+		.goud  {
+			display: block;
+		}
+		
+		.logo,
+		.tagline,
+		.header,
+		.topbar .nav,
+		.sidebar .diamant,
+		.component .goud,
+		#social,
+		.row.nieuwsbrief {
+			display: none;
+		}
+		
+		.content .imgborder {
+		   	margin-bottom: 10px;
+		}
+		
+		p {
+			line-height: 20px;
+			font-size: 11px;
+		}
+		
+		.sponsoren {
+			margin: -10px 0 10px 0;
+		}
+		
+		.content img {
+			max-width: 100%;
+			width: 100%;
+			padding: 0;
+			margin: 0 0 10px 0;
+		}
+		
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		.container .zilver.column { width: 90px; margin: 5px; }
+	}

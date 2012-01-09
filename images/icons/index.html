@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTA/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lan="en" xml:lang="en">
+<head>
+	<title>Ask the CSS Guy: Examples of Hyperlink Cues</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style type="text/css">
+p {font: normal 1em/1.2em arial;}
+
+/* all A tags whose HREF attribute ends in .pdf */
+a[href$='.pdf'] { 
+	padding-right: 18px;
+	background: transparent url(icon_pdf.gif) no-repeat center right;
+}
+
+/* all A tags whose REL attribute equals pdf */
+a[rel='pdf'] { 
+	padding-right: 18px;
+	background: transparent url(icon_pdf.gif) no-repeat center right;
+}
+
+/*  all A tags whose REL attributes has the letters pdf somewhere mixed in*/
+a[rel*='pdf'] { 
+	padding-right: 18px;
+	background: transparent url(icon_pdf.gif) no-repeat center right;
+}
+
+/* all A tags whose REL attribute contains the value pdf, seperated from other values with a space */
+a[rel~='pdf'] { 
+	padding-right: 18px;
+	background: transparent url(icon_pdf.gif) no-repeat center right;
+}
+
+/* all A tags whose HREF attribute starts with mailto: */
+a[href ^="mailto:"] {
+	padding-right: 18px;
+    background: transparent url(icon_mailto.gif) no-repeat center right;
+   
+}
+
+/* all A tags whose CLASS attribute is popup */
+a[class ="popup"] {
+	padding-right: 18px;
+    background: transparent url(icon_popup.gif) no-repeat center right;
+}
+
+
+a[href$='.doc'] { 
+	padding-right: 18px;
+	background: transparent url(icon_doc.gif) no-repeat center right;
+}
+a[href$='.xls'] { 
+	padding-right: 18px;
+	background: transparent url(icon_xls.gif) no-repeat center right;
+}
+a[rel ~='external'] {
+	padding-right: 18px;
+	background: transparent url(icon_external.gif) no-repeat center right;
+}
+</style>
+</head>
+<body>
+<p>View source to see comments regarding the rules.</p>
+
+
+<p><a href="#fdasfa.pdf">View Holidays</a></p>
+
+
+<p><a href="mailto:billgates@microsoft.com">Contact Me</a></p>
+
+
+<p><a class="popup" href="#">View Help</a></p>
+
+
+<p>Has anyone seen the <a href="#noname.doc">memo</a> that explains why the <a href="#noname.pdf">TPS reports</a> have changed?  I've called everyone on my <a href="#noname.xls">phone list</a>, but nobody knows.  I guess I'll have to look <a rel="external" href="http://www.imdb.com/title/tt0151804/">elsewhere</a>.</p>
+
+<p>- The CSS Guy (www.askthecssguy.com)</p>
+
+
+</body>
+</html>
