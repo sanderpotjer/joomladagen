@@ -47,7 +47,7 @@ $app = JFactory::getApplication();
 		================================================== -->
 		<script type="text/javascript">
 		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-19163796-1']);
+		  _gaq.push(['_setAccount', 'XX-XXXXXXXX-X']);
 		  _gaq.push(['_trackPageview']);
 		
 		  (function() {
